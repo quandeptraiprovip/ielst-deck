@@ -2,6 +2,8 @@ import type { Card, Module, Topic } from './types';
 import { FOUNDATION_CARDS } from './data-foundation';
 import { TASK2_CARDS } from './data-task2';
 import { TASK1_CARDS } from './data-task1';
+import { SENTENCE_CARDS } from './data-sentences';
+import { SENTENCE2_CARDS } from './data-sentences2';
 import { VOCAB_CARDS } from './data-vocab';
 import { GRAMMAR_CARDS } from './data-grammar';
 
@@ -9,6 +11,7 @@ export const MODULES: Module[] = [
   { id: 'foundation', label: 'Nền tảng & Tiêu chí', color: '#0d9488' },
   { id: 'task2', label: 'Task 2 — Essay', color: '#2563eb' },
   { id: 'task1', label: 'Task 1 — Academic', color: '#7c3aed' },
+  { id: 'sentences', label: 'Mẫu câu nâng band', color: '#4f46e5' },
   { id: 'vocab', label: 'Từ vựng theo chủ đề', color: '#b45309' },
   { id: 'grammar', label: 'Ngữ pháp & Câu', color: '#be123c' },
 ];
@@ -29,6 +32,17 @@ export const TOPICS: Topic[] = [
   { id: 't1-trends', module: 'task1', label: 'Mô tả xu hướng (line/bar)' },
   { id: 't1-compare', module: 'task1', label: 'So sánh & số liệu (pie/table)' },
   { id: 't1-process', module: 'task1', label: 'Process & Map' },
+  // Sentence structures
+  { id: 's-opinion', module: 'sentences', label: 'Nêu & bảo vệ quan điểm' },
+  { id: 's-cause', module: 'sentences', label: 'Nguyên nhân & kết quả' },
+  { id: 's-concession', module: 'sentences', label: 'Nhượng bộ & phản biện' },
+  { id: 's-comparison', module: 'sentences', label: 'So sánh & tương phản' },
+  { id: 's-example', module: 'sentences', label: 'Đưa ví dụ & dẫn chứng' },
+  { id: 's-conditional', module: 'sentences', label: 'Điều kiện & giả định' },
+  { id: 's-emphasis', module: 'sentences', label: 'Nhấn mạnh (cleft/inversion)' },
+  { id: 's-solution', module: 'sentences', label: 'Đề xuất giải pháp' },
+  { id: 's-define', module: 'sentences', label: 'Định nghĩa & nêu vấn đề' },
+  { id: 's-cohesion', module: 'sentences', label: 'Mở đoạn, chuyển ý & kết bài' },
   // Vocab
   { id: 'v-education', module: 'vocab', label: 'Giáo dục' },
   { id: 'v-environment', module: 'vocab', label: 'Môi trường' },
@@ -50,6 +64,8 @@ export const CARDS: Card[] = [
   ...FOUNDATION_CARDS,
   ...TASK2_CARDS,
   ...TASK1_CARDS,
+  ...SENTENCE_CARDS,
+  ...SENTENCE2_CARDS,
   ...VOCAB_CARDS,
   ...GRAMMAR_CARDS,
 ];

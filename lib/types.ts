@@ -5,7 +5,7 @@ export type Band = 'b6' | 'b7' | 'b8';
 export type CardType = 'concept' | 'vocab' | 'structure' | 'template' | 'sample';
 
 // Module lớn
-export type ModuleId = 'foundation' | 'task2' | 'task1' | 'vocab' | 'grammar';
+export type ModuleId = 'foundation' | 'task2' | 'task1' | 'sentences' | 'vocab' | 'grammar';
 
 // Chủ đề con
 export type TopicId =
@@ -15,6 +15,9 @@ export type TopicId =
   | 't2-types' | 't2-structure' | 't2-ideas' | 't2-cohesion' | 't2-samples'
   // task 1
   | 't1-overview' | 't1-trends' | 't1-compare' | 't1-process'
+  // sentence structures (mẫu câu nâng band)
+  | 's-opinion' | 's-cause' | 's-concession' | 's-comparison' | 's-example'
+  | 's-conditional' | 's-emphasis' | 's-solution' | 's-define' | 's-cohesion'
   // vocab by topic
   | 'v-education' | 'v-environment' | 'v-technology' | 'v-health'
   | 'v-crime' | 'v-work' | 'v-society' | 'v-government'
